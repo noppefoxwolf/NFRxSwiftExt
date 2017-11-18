@@ -19,3 +19,16 @@ extension ObservableType {
     return map(void)
   }
 }
+
+extension ObservableType where E : Equatable {
+  public typealias PreviousPair = (previous: Self.E?, current: Self.E)
+  public func scanPrevious() -> Observable<PreviousPair> {
+    return scanCurrentAndPrevious().map({ PreviousPair(previous: $0.first, current: $0.last!) })
+  }
+  
+  private func scanCurrentAndPrevious() -> Observable<ArraySlice<Self.E>> {
+    return scan([]) { (previous, current) in
+      return Array(previous + [current]).suffix(2)
+    }
+  }
+}
