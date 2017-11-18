@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'NFRxSwiftExt_Example' do
   pod 'NFRxSwiftExt', :path => '../'
-
-  target 'NFRxSwiftExt_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
