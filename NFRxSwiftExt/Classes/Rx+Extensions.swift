@@ -7,7 +7,7 @@
 
 import RxSwift
 
-extension ObservableType where E : Equatable {
+extension ObservableType {
   public typealias PreviousPair = (previous: Self.E?, current: Self.E)
   public func scanPrevious() -> Observable<PreviousPair> {
     return scanCurrentAndPrevious().map({ PreviousPair(previous: $0.first, current: $0.last!) })
