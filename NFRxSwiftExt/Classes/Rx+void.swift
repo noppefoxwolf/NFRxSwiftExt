@@ -14,7 +14,7 @@ public func void<T>(_: T) -> Void {
   return Void()
 }
 
-extension Observable {
+extension ObservableType {
   public func toVoid() -> Observable<Void> {
     return map(void)
   }
