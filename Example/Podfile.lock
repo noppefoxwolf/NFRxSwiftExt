@@ -1,5 +1,5 @@
 PODS:
-  - NFRxSwiftExt (0.1.0):
+  - NFRxSwiftExt (0.3.0):
     - RxCocoa
     - RxOptional
     - RxSwift
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NFRxSwiftExt: b1793b1e6a9ab0f255a15f8d29b606d4a5d44f1a
+  NFRxSwiftExt: b0ebf1fc6ac7db2df7e03fc471b99ca87c2e6aa5
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxOptional: e5448d3e21024489e07c31f6a262f2b50c975367
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
