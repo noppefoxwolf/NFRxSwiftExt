@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NFRxSwiftExt'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'A short description of NFRxSwiftExt.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
