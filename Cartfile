@@ -1,0 +1,3 @@
+github "ReactiveX/RxSwift"
+github "RxSwiftCommunity/RxOptional"
+github "RxSwiftCommunity/RxSwiftExt"
