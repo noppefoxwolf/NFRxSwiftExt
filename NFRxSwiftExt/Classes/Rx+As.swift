@@ -39,3 +39,8 @@ extension Variable {
   }
 }
 
+extension ObservableType {
+  public func asDriverOnErrorDriveWithEmpty() -> SharedSequence<DriverSharingStrategy, Self.E> {
+    return asDriver(onErrorDriveWith: Driver.empty())
+  }
+}

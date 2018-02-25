@@ -20,4 +20,8 @@ extension ObservableType {
   }
 }
 
-
+extension PublishSubject where Element == Void {
+  public func onNext() {
+    onNext(())
+  }
+}

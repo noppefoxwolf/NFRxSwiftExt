@@ -58,7 +58,7 @@ public final class Property<Element> {
     let disposeBag = DisposeBag()
     _disposeBag = disposeBag
     
-    let observable = unsafeObservable.shareReplayLatestWhileConnected()
+    let observable = unsafeObservable.share(replay: 1)
     var initial: E? = nil
     
     observable
